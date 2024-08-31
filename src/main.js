@@ -84,3 +84,14 @@ confirmButton[0].addEventListener('click', function _() {
   toggleModalOverlay();
   clearOutList(modalList);
 });
+
+// ISSUE #5
+
+const today = new Date();
+const dd = String(today.getDate()).padStart(2, '0');
+const mm = String(today.getMonth() + 1).padStart(2, '0');
+const yyyy = today.getFullYear();
+const strToday = `${yyyy}-${mm}-${dd}`;
+
+const inputDate = document.getElementById('date');
+inputDate.setAttribute('min', strToday);
