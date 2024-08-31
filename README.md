@@ -45,3 +45,23 @@ It checks errors with the eslint tool in the code
 It fixes errors with the eslint tool in the code
 
 Good Luck! :)
+
+## Design
+[Figma](https://www.figma.com/design/NoCS9zvvuEAJzVPTE7lWfV/Workshop-%E2%84%962)
+
+## The structure of the codebase
+### public
+### fonts
+This folder contains all the necessary fonts for your design.
+
+### assets
+Here, you'll discover all the images required for your project.
+
+### css
+In this folder, there are already prepared styles for your project, they are already linked to the elements
+
+### index.html
+The main file with the ready markup of your website.
+
+### main.js
+This file currently stands empty, awaiting your creative touch for development purposes.
