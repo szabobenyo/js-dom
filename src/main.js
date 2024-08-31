@@ -83,4 +83,12 @@ confirmButton[0].addEventListener('click', function _() {
   disableButton(submitButton[0]);
   toggleModalOverlay();
   clearOutList(modalList);
+  // ISSUE #4 INSIDE ISSUE #3
+  const myToast = document.getElementById('js-toast');
+  myToast.classList.add('is-show');
+  setTimeout(() => {
+    myToast.classList.remove('is-show');
+  }, 3000);
+  const toastCloseButton = document.querySelector('.btn-close-sm');
+  toastCloseButton.addEventListener('click', () => myToast.classList.remove('is-show'));
 });
